@@ -5458,7 +5458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232aed1207fd5f74397bff7f7c0310f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportDestination: {fileID: 1689193375}
+  teleportDestination: {fileID: 2113938978}
+  teleportSource: {fileID: 1043247313}
 --- !u!65 &1733637282
 BoxCollider:
   m_ObjectHideFlags: 0
