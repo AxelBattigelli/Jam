@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/begin.unity
+    guid: f976893ee10f284428c0aa897b0777a2
+  - enabled: 1
     path: Assets/Scenes/SeptPointInfini.unity
     guid: 986127a633e42124b8f6e5462c2358d0
+  - enabled: 1
+    path: "Assets/\xE9tape escalier/scene/map.unity"
+    guid: 58d75694d9a4b034198401c56f1d85cc
+  - enabled: 1
+    path: Assets/Labyrinth/Labyrinth.unity
+    guid: 6f105ecb16fbb6b44a70bbbbd91dad18
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
