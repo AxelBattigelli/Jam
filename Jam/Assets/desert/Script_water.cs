@@ -17,7 +17,7 @@ public class Water_level : MonoBehaviour
         
         float distance = Vector3.Distance(player.position, transform.position);
         float alpha = Mathf.InverseLerp(fadeDistance, maxFadeDistance, distance);
-        float newY = Mathf.Lerp(initialY, initialY - 10f, alpha);
+        float newY = Mathf.Lerp(initialY, initialY - 5f, alpha);
       
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
