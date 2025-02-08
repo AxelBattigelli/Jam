@@ -7,7 +7,6 @@ public class LightFollow : MonoBehaviour
 
     void Update() // Utilisation de LateUpdate pour éviter des problèmes de lag
     {
-        Debug.Log("Position du joueur : " + transform.position);
         if (player != null)
         {
             transform.position = new Vector3(offset.x, offset.y, player.position.z + 10f); // Suivre la position du joueur
