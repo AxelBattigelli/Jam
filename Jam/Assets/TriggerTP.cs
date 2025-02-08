@@ -2,10 +2,12 @@ using UnityEngine;
 using System.Collections;
 using Invector;
 using Invector.vCharacterController;
+using System;
 
 public class InvectorTeleport : MonoBehaviour
 {
     public Transform teleportDestination; // Position cible
+    public Transform teleportSource;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,16 +27,16 @@ public class InvectorTeleport : MonoBehaviour
         if (controller) controller.enabled = false;
         if (rb)
         {
-            rb.isKinematic = true;
-            rb.linearVelocity = Vector3.zero;
+            //rb.isKinematic = true;
+            //rb.linearVelocity = Vector3.zero;
         }
         yield return new WaitForFixedUpdate();
-
-        player.transform.position = teleportDestination.position;
+        Vector3 delta = teleportDestination.position - teleportSource.position;
+        player.transform.position = player.transform.position + delta;
 
         yield return new WaitForFixedUpdate();
 
-        if (rb) rb.isKinematic = false;
+        //if (rb) rb.isKinematic = false;
         if (controller) controller.enabled = true;
         invectorController.enabled = true;
     }
