@@ -351,7 +351,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -160.82
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6453720961075699264, guid: 706328463cef49c49bbaf53fea05bf98,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453720961075699268, guid: 706328463cef49c49bbaf53fea05bf98,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453720961075699270, guid: 706328463cef49c49bbaf53fea05bf98,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453720961075699271, guid: 706328463cef49c49bbaf53fea05bf98,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276267783685713380, guid: 706328463cef49c49bbaf53fea05bf98,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6453720961075699265, guid: 706328463cef49c49bbaf53fea05bf98, type: 3}
     m_RemovedGameObjects:
     - {fileID: 3742627053329709890, guid: 706328463cef49c49bbaf53fea05bf98, type: 3}
     m_AddedGameObjects: []
@@ -548,6 +574,8 @@ GameObject:
   m_Component:
   - component: {fileID: 178067967}
   - component: {fileID: 178067966}
+  - component: {fileID: 178067969}
+  - component: {fileID: 178067968}
   m_Layer: 0
   m_Name: Timeline (1)
   m_TagString: Untagged
@@ -578,6 +606,8 @@ PlayableDirector:
     value: {fileID: 332555234}
   - key: {fileID: -7208878040190929363, guid: f0149e42b9204384fb4de1731e70845d, type: 2}
     value: {fileID: 952593485}
+  - key: {fileID: 3259735726579983974, guid: f0149e42b9204384fb4de1731e70845d, type: 2}
+    value: {fileID: 178067969}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &178067967
@@ -595,6 +625,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &178067968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178067965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b52413d5bf5c7246acc3f6d10d26752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: MainMenu
+--- !u!114 &178067969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178067965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: c197b2f2a7dbedc43a701d46ccd27762, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 178067968}
+          m_TargetAssemblyTypeName: ChangeSceneAfterTimeline, Assembly-CSharp
+          m_MethodName: LoadScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &187506866
 PrefabInstance:
   m_ObjectHideFlags: 0
