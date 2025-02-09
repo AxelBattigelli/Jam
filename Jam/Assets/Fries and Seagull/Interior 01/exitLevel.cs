@@ -8,7 +8,7 @@ public class ExitLevel : MonoBehaviour
         GameSettings.SaveSettings();
         if (Application.isEditor)
         {
-            EditorApplication.isPlaying = false;
+            //EditorApplication.isPlaying = false;
         }
         else
         {
