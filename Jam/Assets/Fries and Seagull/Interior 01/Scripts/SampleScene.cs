@@ -27,8 +27,6 @@ namespace Seagull.Interior_01 {
         }
 
         private void Update() {
-            foreach (var obj in pushable) 
-                obj.AddForce(80, 0, 80);
         }
 
         private void start(MonoBehaviour obj) {
