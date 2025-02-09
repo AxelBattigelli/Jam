@@ -5807,7 +5807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
-  sceneName: SampleScene
+  sceneName: "\xE9tape bonus/scene/SampleScene"
 --- !u!65 &1487400824
 BoxCollider:
   m_ObjectHideFlags: 0
