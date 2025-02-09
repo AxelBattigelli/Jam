@@ -8,6 +8,12 @@ public class door : MonoBehaviour
     bool toogle;
     public Animator anim;
     public string sceneName = "SampleScene";
+    private SceneFader sceneFader;
+
+    public void Start()
+    {
+        sceneFader = FindObjectOfType<SceneFader>();
+    }
 
     public void doorState()
     {
@@ -27,7 +33,7 @@ public class door : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")) {
-            SceneManager.LoadScene(sceneName);
+            sceneFader.FadeToScene(sceneName);
         }
     }
 }

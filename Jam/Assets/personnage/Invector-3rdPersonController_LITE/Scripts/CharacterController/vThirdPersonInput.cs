@@ -39,6 +39,11 @@ namespace Invector.vCharacterController
 
         protected virtual void Update()
         {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
+            }
+
             InputHandle();                  // update the input methods
             cc.UpdateAnimator();            // updates the Animator Parameters
         }

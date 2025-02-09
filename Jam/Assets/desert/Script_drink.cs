@@ -5,10 +5,13 @@ using UnityEngine.UI;
 public class Script_drink : MonoBehaviour
 {
     public GameObject messageUI;
+    public string sceneName = "SampleScene";
     private bool playerInRange = false;
+    private SceneFader sceneFader;
 
     void Start()
     {
+        sceneFader = FindObjectOfType<SceneFader>();
         messageUI.SetActive(false);
     }
 
@@ -17,7 +20,7 @@ public class Script_drink : MonoBehaviour
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("E cliked");
-            SceneManager.LoadScene("Labyrinth");
+            sceneFader.FadeToScene(sceneName);
         }
     }
 

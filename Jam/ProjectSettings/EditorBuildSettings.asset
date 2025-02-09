@@ -29,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/\xE9tape bonus/scene/Backroom.unity"
     guid: 1b8f914b7d211874693f354965c526d7
+  - enabled: 1
+    path: Assets/desert/desert.unity
+    guid: 8dab6c174c393ec438c75ddc2b2e46d1
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

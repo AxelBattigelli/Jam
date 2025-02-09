@@ -1,15 +1,21 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Permet de charger les scènes
+using UnityEngine.SceneManagement; // Permet de charger les scï¿½nes
 
 public class ChangeSceneOnTrigger : MonoBehaviour
 {
-    public string sceneName = "SampleScene"; // Mets ici le nom de la scène à charger
+    public string sceneName = "SampleScene"; // Mets ici le nom de la scï¿½ne ï¿½ charger
+    private SceneFader sceneFader;
+
+    public void Start()
+    {
+        sceneFader = FindObjectOfType<SceneFader>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Vérifie que c'est bien le joueur
+        if (other.CompareTag("Player")) // Vï¿½rifie que c'est bien le joueur
         {
-            SceneManager.LoadScene(sceneName); // Change de scène
+            sceneFader.FadeToScene(sceneName); // Change de scï¿½ne
         }
     }
 }
