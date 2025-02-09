@@ -5528,7 +5528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0cb8bd9a59d5443992a2979301b89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: SampleScene
+  sceneName: Desert/Desert
 --- !u!1 &1892448652
 GameObject:
   m_ObjectHideFlags: 0
