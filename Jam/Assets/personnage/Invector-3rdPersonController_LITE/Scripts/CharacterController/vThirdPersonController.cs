@@ -4,7 +4,6 @@ namespace Invector.vCharacterController
 {
     public class vThirdPersonController : vThirdPersonAnimator
     {
-        Animator playerAnim;
         public virtual void ControlAnimatorRootMotion()
         {
             if (!this.enabled) return;
@@ -94,7 +93,6 @@ namespace Invector.vCharacterController
                     }
                     else if (!isSprinting)
                     {
-                        playerAnim.SetBool("Sprint", true);
                         isSprinting = true;
                     }
                 }
