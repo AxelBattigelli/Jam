@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneAfterTimeline : MonoBehaviour
 {
-    public string sceneName = "MainMenu";
+    public string sceneName = "SampleScene";
 
     public void LoadScene()
     {

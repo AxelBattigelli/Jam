@@ -6,11 +6,13 @@ public class ScriptToLeave : MonoBehaviour
 {
     public string sceneName = "NomDeLaScene";
     public GameObject messageUI;
+    private SceneFader sceneFader;
 
     private bool playerInTrigger = false;
 
     private void Start()
     {
+        sceneFader = FindObjectOfType<SceneFader>();
         if (messageUI != null)
             messageUI.SetActive(false);
     }
@@ -39,7 +41,7 @@ public class ScriptToLeave : MonoBehaviour
     {
         if (playerInTrigger && Input.GetKeyDown(KeyCode.F))
         {
-            SceneManager.LoadScene(sceneName);
+           sceneFader.FadeToScene(sceneName);
         }
     }
 }

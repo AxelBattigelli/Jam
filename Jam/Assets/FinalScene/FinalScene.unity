@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b52413d5bf5c7246acc3f6d10d26752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: MainMenu
+  sceneName: Fries and Seagull/Interior 01/BRP Sample Scene
 --- !u!114 &178067969
 MonoBehaviour:
   m_ObjectHideFlags: 0
