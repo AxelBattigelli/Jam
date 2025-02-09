@@ -19,4 +19,16 @@ public class SettingGame : MonoBehaviour
         GameSettings.ApplyGraphicsSettings();
         GameSettings.SaveSettings();
     }
+    public void SetFullScreen()
+    {
+        if (GameSettings.IsFullscreen == true)
+        {
+            GameSettings.IsFullscreen = false;
+        } else
+        {
+            GameSettings.IsFullscreen = true;
+        }
+        Screen.fullScreenMode = GameSettings.IsFullscreen ? FullScreenMode.ExclusiveFullScreen : FullScreenMode.Windowed;
+        GameSettings.SaveSettings();
+    }
 }
